@@ -2,7 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: none;
+  font-family: "Dancing Script", cursive;
+  font-family: "EB Garamond", serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 body {
@@ -13,20 +15,14 @@ body {
   align-items: center;
 }
 
-.card .your_result {
-  font-family: "Dancing Script", cursive;
-  font-family: "EB Garamond", serif;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Merriweather", serif;
-  font-family: "Playfair Display", serif;
-}
-
 .summary_result {
-  width: 800px;
-  height: 600px;
+  width: 650px;
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid #3d3535;
+  margin-inline: auto;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card {
@@ -45,8 +41,126 @@ body {
 }
 .card .your_result {
   font-size: 18px;
+  font-weight: 700;
+  color: hsl(241, 100%, 89%);
+  margin: 15px 0 35px 0;
+}
+.card .circle_result {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(190deg, hsl(256, 72%, 46%), hsl(252, 100%, 67%));
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.card .number {
+  margin-bottom: 0px;
+}
+.card .number.result {
+  font-size: 85px;
+  font-weight: 800;
+  color: #fff;
+}
+.card .number.hundred {
+  font-size: 18px;
   font-weight: 500;
   color: hsl(241, 100%, 89%);
+}
+.card .Great {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.card .Great_texte {
+  font-size: 17px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  width: 220px;
+}
+.card.summary {
+  align-items: start;
+  margin: 0 35px 0 35px;
+  color: hsl(224, 30%, 27%);
+}
+.card.summary > p {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  padding-top: 15px;
+}
+.card .summary_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 350px;
+}
+.card .summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.card .summary.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.card .summary.reaction .name_score {
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+.card .summary.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.card .summary.visual .name_score {
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+.card .summary.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.card .summary.verbal .name_score {
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+.card .summary.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.card .summary.memory .name_score {
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
+}
+.card .score {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.card .case {
+  display: flex;
+  gap: 10px;
+}
+button {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  padding: 14px;
+  border-radius: 35px;
+  border-style: none;
+  background-color: hsl(224, 30%, 27%);
 }
 
 /*# sourceMappingURL=style.css.map */

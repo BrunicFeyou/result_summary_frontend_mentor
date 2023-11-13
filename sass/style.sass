@@ -1,28 +1,27 @@
 @use 'reset'
 @use 'mixins' as * 
 
-%family 
-  font-family: 'Dancing Script', cursive
-  font-family: 'EB Garamond', serif
-  font-family: 'Libre Baskerville', serif
-  font-family: 'Merriweather', serif
-  font-family: 'Playfair Display', serif  
+
     
     
     
 
 .summary_result 
-    width: 800px
-    height: 600px 
+    width: 650px
+    height: 500px 
     display: grid
     grid-template-columns: 1fr 1fr
     //justify-content: center
-    border: 1px solid #3d3535
+    //border: 1px solid #3d3535
+    margin-inline: auto
+    @include border(20px)
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 
 .card 
     @include display(flex ,column , none, center )
     height: 100%
     padding: 15px 0 
+    
 
     &.results
         background: linear-gradient(190deg, hsl(252, 100%, 67%),hsla(256, 72%, 46%, 1))
@@ -31,8 +30,122 @@
         @include border(20px)
 
     & .your_result 
-        @include font(18px, 500, hsl(241, 100%, 89%) )
-        @extend %family
+        @include font(18px, 700, hsl(241, 100%, 89%) )
+        margin: 15px 0 35px 0 
+    
+    .circle_result 
+        width: 220px
+        height: 220px 
+        border-radius: 50%
+        background: linear-gradient(190deg, hsla(256, 72%, 46%, 1),hsl(252, 100%, 67%))
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        flex-direction: column
+        margin-bottom: 40px
+    .number   
+        margin-bottom: 0px
+
+        &.result  
+            @include font(85px, 800, #fff)
+        &.hundred 
+            @include font(18px, 500, hsl(241, 100%, 89%))
+    .Great
+        @include font(25px, 500, #fff)
+        margin-bottom: 15px
+
+    .Great_texte
+         @include font(17px, 500, hsl(241, 100%, 89%))
+         text-align: center
+         width: 220px
+
+
+    &.summary 
+        align-items: start
+        margin: 0 35px 0 35px 
+        color: hsl(224, 30%, 27%)
+
+        & > p 
+            @include font(20px, 700, black)
+            padding-top: 15px
+    .summary_list 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 10px
+        width: 100%
+        height: 350px
+        
+
+    .summary
+        @include display(flex, row, start, start)
+        width: 100%
+        height: auto 
+        background-color: yellow
+        padding: 20px
+        justify-content: space-between
+        border-radius: 8px
+
+        
+        &.reaction
+            background-color: hsl(0, 100%, 67%, 0.1)
+            & .name_score 
+                color: hsl(0, 100%, 67%,)
+                font-weight: 600
+
+
+        &.visual 
+            background-color: hsl(234, 85%, 45%, 0.1)
+            & .name_score 
+                color: hsl(234, 85%, 45%)
+                font-weight: 600
+        
+        &.verbal
+            background-color:  hsl(166, 100%, 37%, 0.1)
+            & .name_score 
+                color: hsl(166, 100%, 37%)
+                font-weight: 600
+        
+        &.memory
+            background-color:  hsl(39, 100%, 56%, 0.1)
+            & .name_score 
+                color:  hsl(39, 100%, 56%)
+                font-weight: 600
+    .score 
+        @include font(16px, 500, black)
+
+            
+
+      
+
+    .case 
+        display: flex
+        gap: 10px
+
+        & p 
+
+button 
+    width: 100%
+    height: auto
+    @include font(18px, 700, #fff)
+    padding: 14px
+    border-radius: 35px
+    border-style: none
+    background-color: hsl(224, 30%, 27%)
+
+    
+           
+            
+        
+
+
+    
+
+    
+
+
+    
     
    
 
