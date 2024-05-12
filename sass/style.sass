@@ -17,6 +17,13 @@
     @include border(20px)
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 
+@media  screen and (max-width: 660px)
+    .summary_result 
+        margin-top: 200px
+        height: auto
+        grid-template-columns: 1fr
+  
+
 .card 
     @include display(flex ,column , none, center )
     height: 100%
@@ -65,6 +72,7 @@
         align-items: start
         margin: 0 35px 0 35px 
         color: hsl(224, 30%, 27%)
+        background-color: #fff
 
         & > p 
             @include font(20px, 700, black)
@@ -86,6 +94,8 @@
         padding: 20px
         justify-content: space-between
         border-radius: 8px
+
+        
 
         
         &.reaction
@@ -123,7 +133,7 @@
         display: flex
         gap: 10px
 
-        & p 
+        
 
 button 
     width: 100%
@@ -133,6 +143,11 @@ button
     border-radius: 35px
     border-style: none
     background-color: hsl(224, 30%, 27%)
+
+
+
+    
+
 
     
            

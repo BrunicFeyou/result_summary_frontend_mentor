@@ -25,6 +25,13 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+@media screen and (max-width: 660px) {
+  .summary_result {
+    margin-top: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -87,6 +94,7 @@ body {
   align-items: start;
   margin: 0 35px 0 35px;
   color: hsl(224, 30%, 27%);
+  background-color: #fff;
 }
 .card.summary > p {
   font-size: 20px;
@@ -151,6 +159,7 @@ body {
   display: flex;
   gap: 10px;
 }
+
 button {
   width: 100%;
   height: auto;
