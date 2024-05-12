@@ -27,7 +27,7 @@ body {
 
 @media screen and (max-width: 660px) {
   .summary_result {
-    margin-top: 300px;
+    
     height: auto;
     grid-template-columns: 1fr;
   }
